@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nabla&family=Poppins&family=Roboto:wght@500&family=Silkscreen&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+#vingette{
+    background-image: linear-gradient(rgba(9, 9, 9, 0.4), rgba(18, 18, 18, 0.41)), url(../img/wallpaper.jpg);
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+    background-size: cover;
+    animation: backgroundvingette 2s infinite;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 400%;
+    font-family: 'Roboto';
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-top: 5%;
+    background: linear-gradient(90deg, rgba(249,226,104,1) 25%, rgb(106, 2, 158) 63%, rgb(164, 252, 255) 77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    font-size: 500%;
+}
+
+#titleShadow{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(90deg, rgb(164, 252, 255) 35%, rgb(249, 160, 203) 50%, rgba(249,226,104,1) 67%);
+    z-index: -1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+.button{
+    font-family: 'Poppins';
+    cursor: pointer;
+    width: 2.5%;
+    margin: 1%;
+    z-index: 1;
+    color: white;
+    font-size: 450%;
+    font-weight: 1250;
+    transition-duration: 250ms;
+}
+
+.button:hover{
+    scale: 1.2;
+}
+
+#buttonLeft{
+    background-image: url(../img/arrowLeft.png);
+}
+
+#buttonRight{
+    background-image: url(../img/arrowRight.png);
+}
+
+#slideshow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    padding: 5%;
+}
+
+.image{
+    width: 15%;
+    margin: 1%;
+    filter: grayscale(0.4);
+    box-shadow: 0px 0px 4px 1px rgb(77, 77, 77);
+    z-index: 2;
+    scale: 1.5;
+}
+
+.borderImg{
+    scale: 1.1;
+    filter: grayscale(0.6);
+    z-index: 1;
+}
+
+#imageMiddle{
+    scale: 1.75;
+    box-shadow: 0px 0px 15px 2px white;
+    filter: grayscale(0);
+    z-index: 3;
+    animation: imageMiddle 5s ease-in-out infinite;
+}
+
+@keyframes imageMiddle {
+    0% {box-shadow: 0px 0px 10px 0.75px white;}
+    50% {box-shadow: 0px 0px 20px 2.5px rgb(250, 200, 240);}
+    100% {box-shadow: 0px 0px 10px 0.75px white;}
+}
+
+@keyframes backgroundvingette {
+    0% {background-image: linear-gradient(rgba(9, 9, 9, 0.25), rgba(18, 18, 18, 0.26)), url(../img/wallpaper.jpg);}
+    50% {background-image: linear-gradient(rgba(9, 9, 9, 0.3) rgba(18, 18, 18, 0.31)), url(../img/wallpaper.jpg);}
+    100% {background-image: linear-gradient(rgba(9, 9, 9, 0.25), rgba(18, 18, 18, 0.26)), url(../img/wallpaper.jpg);}
+}
+
+.infoLink{
+    position: fixed;
+    border: solid white 3px;
+    color: white;
+    box-shadow: 0px 0px 5px 0.5px white;
+    display: flex;
+    font-family: 'roboto';
+    font-size: 200%;
+    font-weight: 800;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.5vh;
+    height: 6.5vh;
+    border-radius: 1000px;
+    padding: 1%;
+    transition-duration: 200ms;
+}
+
+.infoLink:hover {
+    box-shadow: 0px 0px 7.5px 0.75px white;
+    scale: 1.05;
+    cursor: pointer;
+}
+
+#link1 {
+    top: 3vh;
+    right: 5vh;
+}
+
+#link2 {
+    top: 12vh;
+    right: 5vh;
+
+    font-size: 175%;
+    padding-bottom: 1.3%;
+}
+
+#link3 {
+    top: 3vh;
+    left: 5vh;
+    padding-bottom: 1.1%;
+}
+
+span{
+    color:rgb(164, 252, 255);
+    font-size: 500%;
+}
+
+#article{
+    font-family: 'Poppins';
+    color: white;
+    margin: 15vh auto;
+    width: 80%;
+    background-color: rgba(193, 233, 235, 0.3);
+    padding: 2.5%;
+    border-radius: 10vh; 
+    padding-top: 0;
+}
