@@ -6,5 +6,6 @@ Reveal.initialize({
 
     // Learn about plugins: https://revealjs.com/plugins/
     plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
-    shuffle: true
+    transition: 'zoom',
+    margin: 0.2
 });
